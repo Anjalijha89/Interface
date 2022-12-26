@@ -1,0 +1,64 @@
+public class Iterface
+{
+    public static void main(String args[])
+    {
+        //Queen q = new Queen();
+       // q.moves();
+        Bear b = new Bear();
+        b.eatgrass();
+        b.eatnonveg();
+    }
+}
+/*
+interface Chessplayer
+{
+    void moves();
+
+}
+class Queen implements  Chessplayer
+{
+    public void moves()
+    {
+        System.out.println("Up , down , left , right,diagonal in all 4 direction");
+    }
+}
+
+class Rook implements  Chessplayer
+{
+    public void moves()
+    {
+        System.out.println("Up , down , left , right");
+    }
+}
+
+class King implements  Chessplayer
+{
+    public void moves()
+    {
+        System.out.println("Up , down , left , right,diagonal in 1 steps");
+    }
+}
+
+ */
+
+//2 Implement multiple inhertance by using interface
+
+interface harivore
+{
+    void eatgrass();
+}
+interface carnivore
+{
+   void eatnonveg();
+}
+class Bear implements  harivore , carnivore
+{
+    public void eatgrass()
+    {
+        System.out.println("Eat grass");
+    }
+    public void eatnonveg()
+    {
+        System.out.println("Eat veg");
+    }
+}
